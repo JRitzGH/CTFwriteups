@@ -120,7 +120,7 @@ Using the partially-solved grid given from the solver, XOR our current solution 
 ```
 Now, putting this into the same solver and clicking solves brings us this:
 
-![[Second try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/blob/main/docs/assets/images/Missing_cells_2.png)
+![Second try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/blob/main/docs/assets/images/Missing_cells_2.png)
 
 Uh oh! It seems like we're still not done. What other assumptions can we make?
 ## The Final Piece
