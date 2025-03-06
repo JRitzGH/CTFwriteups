@@ -35,7 +35,9 @@ The attached zip file, when extracted, gives us two pieces of information. `secr
 . . . . . . 0 . . 1 . . . . . 0
 . . . . . . . . . . . . . . . . 
 ```
-Looking up a binairo solver online, I found [this one](https://binarypuzzle.nl/) that appeared to seem just right. Setting the grid to 16x16 and filling in the current numbers we are given provide us with this solution.
+Looking up a binairo solver online, I found [this one](https://binarypuzzle.nl/) that appeared to seem just right. Setting the grid to 16x16 and filling in the current numbers we are given provide us with this solution:
+
+![First try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/docs/assets/images/Missing_cells_1.png?raw=true)
 
 Oh no! There's multiple solutions? Where to go from here?
 ## Solving the Binairo puzzle
@@ -118,6 +120,8 @@ Using the partially-solved grid given from the solver, XOR our current solution 
 ```
 Now, putting this into the same solver and clicking solves brings us this:
 
+![Second try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/docs/assets/images/Missing_cells_2.png?raw=true)
+
 Uh oh! It seems like we're still not done. What other assumptions can we make?
 ## The Final Piece
 Since the solution that we are attempting to create through XOR will result in a binary string. There are specific properties the binary must have in order to form ASCII text.
@@ -163,6 +167,8 @@ And, XORing this and adding it to are in-progress grid gives us this.
 ```
 Now, putting this in the solver results in:
 
+![Third try solving - Complete!](https://github.com/JRitzGH/CTFwriteups/docs/assets/images/Missing_cells_3.png?raw=true)
+
 Great! Now lets XOR This solved puzzle with our secret to get the solution. You can do this online, by hand, or with code.
 I chose to do it with this python code:
 ```
@@ -202,7 +208,3 @@ This resulted in this solution grid:
 ```
 This, when converted to text, created `PWNME{t4kuZU_0R_b1n41r0_15_fUn!}`
 What a fun challenge!
-
-
-
-
