@@ -13,6 +13,8 @@ Flag format: `PWNME{.........................}`
 ### Author
 - Mat
 
+## [Link to the challenge](https://github.com/Phreaks-2600/PwnMeCTF-2025-quals/tree/main/Misc/Missing_cells)
+
 ## Analysis
 
 Reading the description, it mentions a binary version of soduko. A quick google search provides us with [this](https://en.wikipedia.org/wiki/Takuzu) Wikipedia article about this game, known as either Takuzu, Binario, or others.
