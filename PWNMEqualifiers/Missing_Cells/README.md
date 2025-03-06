@@ -37,7 +37,7 @@ The attached zip file, when extracted, gives us two pieces of information. `secr
 ```
 Looking up a binairo solver online, I found [this one](https://binarypuzzle.nl/) that appeared to seem just right. Setting the grid to 16x16 and filling in the current numbers we are given provide us with this solution:
 
-![First try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/docs/assets/images/Missing_cells_1.png?raw=true)
+![First try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/blob/main/docs/assets/images/Missing_cells_1.png)
 
 Oh no! There's multiple solutions? Where to go from here?
 ## Solving the Binairo puzzle
@@ -120,7 +120,7 @@ Using the partially-solved grid given from the solver, XOR our current solution 
 ```
 Now, putting this into the same solver and clicking solves brings us this:
 
-![Second try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/docs/assets/images/Missing_cells_2.png?raw=true)
+![[Second try solving - incomplete](https://github.com/JRitzGH/CTFwriteups/blob/main/docs/assets/images/Missing_cells_2.png)
 
 Uh oh! It seems like we're still not done. What other assumptions can we make?
 ## The Final Piece
@@ -167,7 +167,7 @@ And, XORing this and adding it to are in-progress grid gives us this.
 ```
 Now, putting this in the solver results in:
 
-![Third try solving - Complete!](https://github.com/JRitzGH/CTFwriteups/docs/assets/images/Missing_cells_3.png?raw=true)
+![Third try solving - complete!](https://github.com/JRitzGH/CTFwriteups/blob/main/docs/assets/images/Missing_cells_3.png)
 
 Great! Now lets XOR This solved puzzle with our secret to get the solution. You can do this online, by hand, or with code.
 I chose to do it with this python code:
