@@ -173,7 +173,7 @@ Now, putting this in the solver results in:
 
 Great! Now lets XOR This solved puzzle with our secret to get the solution. You can do this online, by hand, or with code.
 I chose to do it with this python code:
-```
+```py
 def xor_binary_strings(bin_str1, bin_str2):
     if len(bin_str1) != len(bin_str2):
         raise ValueError("Binary strings must be of the same length")
